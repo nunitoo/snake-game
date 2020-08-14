@@ -80,7 +80,7 @@ def test():
     assert snake == [(0, 4), (0, 3), (0, 2), (0, 1)]
     assert fruit != (0, 4)
 
-    assert not step('DOWN'), 'Kdyz nacouvam do sebe, umru!'
+    assert not step('DOWN')
 
 DIRS = ['UP', 'RIGHT', 'DOWN', 'LEFT']
 def run():
