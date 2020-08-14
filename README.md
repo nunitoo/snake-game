@@ -13,7 +13,7 @@ chmod +x instalar-dependencias.sh
 ./instalar-dependencias.sh
 ```
 
-## Anexo da inicialização do jogo com alias, para uso de passa-tempo:
+## Anexo da inicialização do jogo com alias, para uso de passa-tempo
 
 Está disponibilizado o arquivo [a_console.sh](a_console.sh) que nada mas faz que configuração de `alias` para iniciar o jogo a partir do terminal como comando interno do sistema.
 
