@@ -17,4 +17,4 @@ chmod +x instalar-dependencias.sh
 
 Está disponibilizado o arquivo [a_console.sh](a_console.sh) que nada mas faz que configuração de `alias` para iniciar o jogo a partir do terminal como comando interno do sistema.
 
-basta lançar um `./a_console.sh`.
+basta lançar um `./a_console.sh`
