@@ -2,6 +2,8 @@
 
  Clássico jogo
 
+ ![IMG](IMG_7649.GIF)
+
 ## Rodar o jogo
 
 O jogo pode ser inicializado executando o código [snake-game.py](snake-game.py) com python3.
