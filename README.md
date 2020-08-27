@@ -6,7 +6,7 @@
 
 ## Rodar o jogo
 
-O jogo pode ser inicializado executando o código [snake-game.py](snake-game.py) com python3.
+O jogo pode ser inicializado executando o código [snake-game.py](snake-game.py) com ```python3```.
 É importante observar que há dependências para o funcionamento do jogo. Para instalar todas, há o arquivo [instalar-dependencias.sh](instalar-dependencias.sh) cuja função é automatizar este processo.
 
 Execute:
