@@ -46,41 +46,10 @@ def step(direction):
     if new_head == fruit:
         place_fruit()
     else:
-        tail = snake[-1]
         del snake[-1]
 
     snake.insert(0, new_head)
     return True
-
-def print_field():
-    os.system('clear')
-    print('=' * (ARRAY_SIZE+2))
-    for y in range(ARRAY_SIZE-1, -1, -1):
-        print('|', end='')
-        for x in range(ARRAY_SIZE):
-            out = ' '
-            if (x, y) in snake:
-                out = 'X'
-            elif (x, y) == fruit:
-                out = 'O'
-            print(out, end='')
-        print('|')
-    print('=' * (ARRAY_SIZE+2))
-
-def test():
-    global fruit
-    init()
-    assert step('UP')
-
-    assert snake == [(0, 3), (0, 2), (0, 1)]
-
-    fruit = (0, 4)
-    assert step('UP')
-
-    assert snake == [(0, 4), (0, 3), (0, 2), (0, 1)]
-    assert fruit != (0, 4)
-
-    assert not step('DOWN')
 
 DIRS = ['UP', 'RIGHT', 'DOWN', 'LEFT']
 def run():
@@ -94,7 +63,6 @@ def run():
     appleimage.fill((255, 0, 255))
     img = pygame.Surface((10, 10))
     img.fill((0, 255, 0))
-    clock = pygame.time.Clock()
 
     pygame.time.set_timer(1, 100)
 
@@ -113,7 +81,7 @@ def run():
 
         if not step(DIRS[direction]):                   
             pygame.quit()                          
-            sys.exit()           
+            sys.exit()
 
         s.fill((255, 255, 255))	
         for bit in snake:
